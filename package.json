@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "mogodb server",
   "main": "app.js",
+  "engines": {
+    "node": "12.11.1",
+    "npm": "6.12.8"
+  },
   "scripts": {
     "dev": "nodemon app.js"
   },
