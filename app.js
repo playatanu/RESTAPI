@@ -2,6 +2,8 @@
 
 
 const uri = "mongodb+srv://admin:euqnIvcHOGt90hG6@cluster0.8xuok.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+const PORT = process.env.PORT || 8080;
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
@@ -27,7 +29,7 @@ app.use('/api', apiRouter)
 
 
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(PORT, () => {
     console.log('Port Connted')
 })
 
