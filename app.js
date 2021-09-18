@@ -27,6 +27,11 @@ const apiRouter = require('./routers/api')
 app.use('/users', userRouter)
 app.use('/api', apiRouter)
 
+app.get('/', (req, res) => {
+
+    res.send('connted')
+})
+
 
 
 app.listen(PORT, () => {
