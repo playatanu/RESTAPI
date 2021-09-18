@@ -1,0 +1,19 @@
+{
+  "name": "openserver",
+  "version": "1.0.0",
+  "description": "mogodb server",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "Atanu Debnath",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "env": "^0.0.2",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.6",
+    "nodemon": "^2.0.12"
+  }
+}
