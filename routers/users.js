@@ -70,6 +70,22 @@ router.delete('/:id', async (req, res) => {
 
 })
 
+router.delete('/', async (req, res) => {
+
+  try {
+    await User.findByIdAndRemove(req.params.id);
+
+    res.send('Deleted Secsfully')
+
+
+  }
+  catch (err) {
+
+
+  }
+
+})
+
 
 
 router.post('/', async (req, res) => {
