@@ -72,19 +72,24 @@ router.delete('/:id', async (req, res) => {
 
 router.delete('/', async (req, res) => {
 
+
+
+  console.log(req.body._id)
+
   try {
-    await User.findByIdAndRemove(req.params.id);
+    await User.findByIdAndRemove(req.body._id).then(console.log('done'));
 
     res.send('Deleted Secsfully')
-
 
   }
   catch (err) {
 
-
+    res.send(err)
   }
 
 })
+
+
 
 
 
