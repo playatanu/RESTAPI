@@ -1,0 +1,18 @@
+Delect user 
+
+{ 
+   "_id": "userId"
+}
+
+Add user //post function
+
+{
+    "name": "userName",
+    "email": "userEmail",
+}
+
+Patch by ID 
+
+
+
+
