@@ -1,7 +1,5 @@
 const express = require('express')
-const user = require('../models/user')
 const router = express.Router()
-
 const User = require('../models/user')
 
 router.get('/', async (req, res) => {
@@ -70,9 +68,9 @@ router.delete('/:id', async (req, res) => {
 
 })
 
+//Delet user By Id
+
 router.delete('/', async (req, res) => {
-
-
 
   console.log(req.body._id)
 
@@ -91,7 +89,7 @@ router.delete('/', async (req, res) => {
 
 
 
-
+//Add user
 
 router.post('/', async (req, res) => {
 
@@ -104,8 +102,6 @@ router.post('/', async (req, res) => {
   try {
     const data = await user.save()
     res.json(data)
-
-    // console.log(data)
 
   }
   catch (err) {

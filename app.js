@@ -6,11 +6,10 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
 const fs = require('fs')
-app.use(express.json());  /* bodyParser.json() is deprecated */
 
-// parse requests of content-type - application/x-www-form-urlencoded
+
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 mongoose.connect(uri, { useNewUrlParser: true })
 
 const connect = mongoose.connection
